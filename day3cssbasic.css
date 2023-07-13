@@ -13,3 +13,28 @@ h1 {
 #h-sub1-in {
     color: red;
 }
+
+.image-01 {
+    width: 500px;
+}
+
+.image-02 {
+    width: 50%;
+}
+
+div {
+    width: 50%;
+    height: 200px;
+    background-color: blueviolet;
+}
+
+.div-in {
+    width: 50%;
+    background-color: aquamarine;
+}
+
+.div-in-in {
+    width: 50%;
+    height: 200px;
+    background-color: bisque;
+}
