@@ -38,3 +38,24 @@ div {
     height: 200px;
     background-color: bisque;
 }
+
+.out {
+    background-color: aqua;
+    height: 30vh;
+    width: 70vw;
+}
+
+.in {
+    background-color: aquamarine;
+    height: 50%;
+    width: 50%;
+}
+
+p {
+    font-size: 2em;
+}
+
+.image-11 {
+    width: 30%;
+    border: 10px solid palevioletred;
+}
