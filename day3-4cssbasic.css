@@ -58,4 +58,5 @@ p {
 .image-11 {
     width: 30%;
     border: 10px solid palevioletred;
+    box-shadow: 10px 10px 15px black;
 }
