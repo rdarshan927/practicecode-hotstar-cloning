@@ -4,9 +4,24 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: sans-serif;
+    width: 100%;
+    background-color: #333;
+    position: relative;
+}
+
 .navigation-bar {
     display: flex;
-    margin-top: 4vh;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 0 4%;
+    background-color: #333;
+    z-index: 0;
+    align-items: center;
 }
 
 .navigation-logo {
@@ -15,6 +30,7 @@
 }
 
 .navigation-links {
+    margin-top: 10px;
     display: flex;
     list-style: none;
 }
@@ -22,6 +38,7 @@
 .navigation-links-in > a {
     text-decoration: none;
     color: #fff;
+    opacity: 0.9;
 }
 
 .navigation-links-in {
@@ -30,29 +47,47 @@
 }
 
 .rightside-container {
-    padding-left: 50%;
-}
-
-body {
-    font-family: sans-serif;
-    width: 100%;
-    background-color: #333;
+    display: block;
+    margin-left: auto;
 }
 
 .search-box {
     border: none;
-    border-bottom: 1px;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    color: #fff;
+    width: 250px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.search-box:focus {
+    width: 400px;
+    border-color: aqua;
 }
 
 .subscribe-button {
     background-color: blue;
+    color: #fff;
     font-weight: bold;
+    height: 30px;
+    /*width: 110px;*/
     border-radius: 5px;
-
+    padding: 0 20px;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    font-size: 12px;
+    margin: 0 10px;
 }
 
 .rightside-container > a {
     text-decoration: none;
+    opacity: 0.9;
+    font-size: 15px;
     color: #fff;
     font-weight: bold;
 }
