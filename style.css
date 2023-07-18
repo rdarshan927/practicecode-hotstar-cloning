@@ -91,3 +91,37 @@ body {
     color: #fff;
     font-weight: bold;
 }
+
+.middle-short-videoscroll {
+    position: relative;
+    height: 10vw;
+    width: 92%;
+    margin: auto;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.videoscroll-inside {
+    position: relative;
+    min-width: calc(100%/5.0-10px);
+    width: calc(100%/5.0-10px);
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: black;
+}
+
+.inside-video1, .inside-image1 {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.inside-video1 {
+    position: absolute;
+}
+
+.videoscroll-inside:hover .inside-image1 {
+    display: none;
+}
