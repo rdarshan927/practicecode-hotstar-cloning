@@ -125,3 +125,20 @@ body {
 .videoscroll-inside:hover .inside-image1 {
     display: none;
 }
+
+.top-image-container {
+    position: relative;
+    height: 350px;
+    width: 100%;
+    padding: 20px 0;
+    overflow-x: hidden;
+    margin-top: 80px;
+}
+
+.top-image-container-in {
+    display: flex;
+    width: 92%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+}
