@@ -3,38 +3,38 @@ let movies = [
         name: "Loki",
         description:
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, consequatur incidunt eum in voluptatum ad odio cupiditate magnam quis cum deleniti modi maxime totam omnis, nam quae! Iste, tenetur officiis.",
-        image: ""
+        image: "/home/rdarshan927/Downloads/drive-download-20230715T162759Z-001/images/slider 1.PNG"
     },
     {
-        name: "Loki",
+        name: "Winter Soldier",
         description:
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, consequatur incidunt eum in voluptatum ad odio cupiditate magnam quis cum deleniti modi maxime totam omnis, nam quae! Iste, tenetur officiis.",
-        image: ""
+        image: "/home/rdarshan927/Downloads/drive-download-20230715T162759Z-001/images/slider 2.PNG"
     },
     {
-        name: "Loki",
+        name: "Wanda Vision",
         description:
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, consequatur incidunt eum in voluptatum ad odio cupiditate magnam quis cum deleniti modi maxime totam omnis, nam quae! Iste, tenetur officiis.",
-        image: ""
+        image: "/home/rdarshan927/Downloads/drive-download-20230715T162759Z-001/images/slider 3.PNG"
     },
     {
-        name: "Loki",
+        name: "Raya and the last Dragon",
         description:
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, consequatur incidunt eum in voluptatum ad odio cupiditate magnam quis cum deleniti modi maxime totam omnis, nam quae! Iste, tenetur officiis.",
-        image: ""
+        image: "/home/rdarshan927/Downloads/drive-download-20230715T162759Z-001/images/slider 4.png"
     },
     {
-        name: "Loki",
+        name: "Luca",
         description:
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, consequatur incidunt eum in voluptatum ad odio cupiditate magnam quis cum deleniti modi maxime totam omnis, nam quae! Iste, tenetur officiis.",
-        image: ""
+        image: "/home/rdarshan927/Downloads/drive-download-20230715T162759Z-001/images/slider 5.PNG"
     },
-    {
-        name: "Loki",
-        description:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, consequatur incidunt eum in voluptatum ad odio cupiditate magnam quis cum deleniti modi maxime totam omnis, nam quae! Iste, tenetur officiis.",
-        image: ""
-    },
+    //{
+        //name: "",
+        //description:
+          //  "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, consequatur incidunt eum in voluptatum ad odio cupiditate magnam quis cum deleniti modi maxime totam omnis, nam quae! Iste, tenetur officiis.",
+        //image: "/home/rdarshan927/Downloads/drive-download-20230715T162759Z-001/images/slider 6.PNG"
+    //},
 ];
 
 const topcontainer=document.querySelector('.top-image-container');
@@ -44,8 +44,8 @@ let sliders=[];
 let sliderIndex= 0;     //using to track the current slide.
 
 const createSlide = () => {
-    if(slideIndex>=movies.length){
-        slideIndex = 0;
+    if(sliderIndex>=movies.length){
+        sliderIndex = 0;
     }
 
     //DOM elements
@@ -57,8 +57,8 @@ const createSlide = () => {
 
     //attach elements
     imgElement.appendChild(document.createTextNode(''));
-    h1.appendChild(document.createTextNode(movies[slideIndex].name));
-    p.appendChild(document.createTextNode(movies[slideIndex].description));
+    h1.appendChild(document.createTextNode(movies[sliderIndex].name));
+    p.appendChild(document.createTextNode(movies[sliderIndex].description));
     content.appendChild(h1);
     content.appendChild(p);
     slide.appendChild(imgElement);
