@@ -21,7 +21,7 @@ let movies = [
         name: "Raya and the last Dragon",
         description:
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, consequatur incidunt eum in voluptatum ad odio cupiditate magnam quis cum deleniti modi maxime totam omnis, nam quae! Iste, tenetur officiis.",
-        image: "/home/rdarshan927/Downloads/drive-download-20230715T162759Z-001/images/slider 4.png"
+        image: "/home/rdarshan927/Downloads/drive-download-20230715T162759Z-001/images/slider 4.PNG"
     },
     {
         name: "Luca",
@@ -29,12 +29,7 @@ let movies = [
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, consequatur incidunt eum in voluptatum ad odio cupiditate magnam quis cum deleniti modi maxime totam omnis, nam quae! Iste, tenetur officiis.",
         image: "/home/rdarshan927/Downloads/drive-download-20230715T162759Z-001/images/slider 5.PNG"
     },
-    //{
-        //name: "",
-        //description:
-          //  "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, consequatur incidunt eum in voluptatum ad odio cupiditate magnam quis cum deleniti modi maxime totam omnis, nam quae! Iste, tenetur officiis.",
-        //image: "/home/rdarshan927/Downloads/drive-download-20230715T162759Z-001/images/slider 6.PNG"
-    //},
+
 ];
 
 const topcontainer=document.querySelector('.top-image-container');
@@ -65,14 +60,14 @@ const createSlide = () => {
     topcontainer.appendChild(slide);
 
     //setting images
-    imgElement.src=movies[slideIndex].image;
+    imgElement.src=movies[sliderIndex].image;
     sliderIndex++
 
     //setting elment classnames
     slide.className='slider';
-    content.className='slide-content';
+    content.className='slider-contents';
     h1.className='movie-title';
-    p.className='movie-description'
+    p.className='movie-description';
 
     sliders.push(slide);
 
