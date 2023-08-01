@@ -28,11 +28,11 @@ let movies = [
         description:
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, consequatur incidunt eum in voluptatum ad odio cupiditate magnam quis cum deleniti modi maxime totam omnis, nam quae! Iste, tenetur officiis.",
         image: "/home/rdarshan927/Downloads/drive-download-20230715T162759Z-001/images/slider 5.PNG"
-    },
+    }
 
 ];
 
-const topcontainer=document.querySelector('.top-image-container');
+const topcontainer=document.querySelector('.top-image-container-in');
 
 let sliders=[];
 
